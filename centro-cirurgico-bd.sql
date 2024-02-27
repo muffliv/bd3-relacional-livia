@@ -41,8 +41,13 @@ cod_medico INT UNSIGNED NOT NULL,
 cod_paciente INT UNSIGNED NOT NULL,
 data_cirurgia VARCHAR(10) NOT NULL,
 status_cirurgia ENUM ('AGENDADO', 'CONCLUIDO', 'CANCELADO')
-)
+);
 
 create table tbl_agenda(
 cod_agenda INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
-)
+cod_sala INT UNSIGNED NOT NULL,
+cod_medico INT UNSIGNED NOT NULL,
+cod_paciente INT UNSIGNED NOT NULL,
+data_cirurgia VARCHAR (10) NOT NULL,
+status_cirurgia enum ('Agendado', 'Concluido', 'Cancelado')
+);
