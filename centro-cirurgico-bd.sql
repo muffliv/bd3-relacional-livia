@@ -14,7 +14,8 @@ telefone_paciente VARCHAR (10),
 celular_paciente VARCHAR (11) NOT NULL,
 email_paciente VARCHAR (100) NOT NULL,
 nome_responsavel VARCHAR (500) NOT NULL,
-email_responsavel VARCHAR (100) NOT NULL
+email_responsavel VARCHAR (100) NOT NULL,
+telefone_responsavel VARCHAR(20) NOT NULL
 );
 
 create table tbl_medico(
@@ -51,3 +52,5 @@ cod_paciente INT UNSIGNED NOT NULL,
 data_cirurgia VARCHAR (10) NOT NULL,
 status_cirurgia enum ('Agendado', 'Concluido', 'Cancelado')
 );
+
+drop database centro_cirurguco_bd;
